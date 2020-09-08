@@ -124,13 +124,6 @@ Login Insert Query
 db.login.insertOne({ "invnumber":"INVLO001","username":"admin","password":"admin","status":"Active","userOtp":""});
 db.login.insertOne({ "invnumber":"INVLO002","username":"josni","password":"josni","status":"Active","userOtp":""});
 db.login.insertOne({ "invnumber":"INVLO003","username":"alex","password":"alex","status":"Active","userOtp":""});
-UserRole Insert Query
-=====================
-db.userRole.insertOne({ "invnumber":"INVUS001","userRole":"HRD","menuItem":"Employment,Vendor & Customer,Category & Product,Purchase,Sales,Finance,Stock,Report","subMenuItem":"","status":"Active"});
-db.userRole.insertOne({ "invnumber":"INVUS002","userRole":"SALES MANAGER","menuItem":"Employment,Vendor & Customer,Category & Product,Purchase,Sales,Finance","subMenuItem":"","status":"Active"});
-db.userRole.insertOne({ "invnumber":"INVUS003","userRole":"ADMINISTRATOR","menuItem":"Employment,Vendor & Customer,Category & Product,Purchase,Sales,Stock","subMenuItem":"","status":"Active"});
-db.userRole.insertOne({ "invnumber":"INVUS004","userRole":"WAREHOUSE CHIEF","menuItem":"Employment,Vendor & Customer,Category & Product,Stock,Report","subMenuItem":"","status":"Active"});
-
 
 
 Menu Insert Query
