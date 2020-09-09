@@ -35,7 +35,8 @@ public class UserMgtImpl implements UserMgtDAL {
 	// load User list
 	public List<UserRole> load(List<UserRole> userlist) {
 		Query query = new Query();
-		query.with(new Sort(new Order(Direction.DESC, "invnumber"))).limit(5);
+		//query.with(new Sort(new Order(Direction.DESC, "invnumber"))).limit(5);
+		query.with(new Sort(new Order(Direction.DESC, "invnumber")));
 		query.addCriteria(Criteria.where("status").is("Active"));
 		userlist = mongoTemplate.find(query,UserRole.class);
 		return userlist;
